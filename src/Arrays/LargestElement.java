@@ -12,7 +12,7 @@ public class LargestElement {
 
         int largest = Integer.MIN_VALUE;
         int secondLargest = Integer.MIN_VALUE;
-
+        int num1;
         for (int num : arr) {
             if (num > largest) {
                 secondLargest = largest;
