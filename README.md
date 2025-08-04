@@ -192,3 +192,37 @@ Every time you solve a problem:
         GCD String → math pattern + string logic
         Sliding Window → max consecutive ones, max sum subarray
 
+🍎 Problem Summary: Fruit Into Baskets
+
+You're given an array fruits[], each number = type of fruit on that tree.
+You're allowed to carry only 2 types (like having 2 fruit baskets).
+Goal: Find the longest contiguous subarray where there are only 2 types of fruits.
+🔍 Step-by-Step Thinking (Pattern: Sliding Window)
+🧠 Key Observations:
+
+    You must take every fruit from the starting index until you hit a 3rd type.
+
+    So, you’re basically looking for the longest subarray with at most 2 distinct integers.
+
+💡This is literally a sliding window with a hashmap/frequency counter.
+✅ Strategy (High-Level):
+
+    Use two pointers: start and end for the sliding window.
+
+    Keep a Map<Integer, Integer> to track fruit counts in the current window.
+
+    Expand end to the right:
+
+        Add fruit to the map and increase count.
+
+    If map has more than 2 keys:
+
+        Shrink from the left (start) until only 2 keys remain.
+
+    Track the max window size.
+
+    Input: [1,2,1]
+Window: [1,2,1] → only 2 types → return 3 ✅
+
+Input: [1,2,3,2,2]
+→ [2,3,2,2] is longest with 2 types → return 4 ✅
