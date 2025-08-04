@@ -131,3 +131,64 @@ These problems test your ability to:
     Handle integer boundaries (overflows/underflows)
 
     Think in edge cases before brute-forcing
+
+
+Day 3 Breakdown (DSA + Java + Debug Mindset)
+✅ 1. DSA Focus – Pattern: Two Pointers / In-Place Modification
+
+We're sticking with in-place modification problems for now, to solidify pointer intuition. Here's your problem list:
+🚀 Problem 1: Remove Duplicates from Sorted Array
+
+    Pattern: Two Pointers
+
+    Goal: Keep unique elements at the front. Return length k.
+
+    Approach: i tracks the last unique; j scans.
+
+🚀 Problem 2: Move Zeroes
+
+    Pattern: Two Pointers (non-zero collector)
+
+    Goal: Move all 0s to end while keeping order.
+
+    Hint: Same logic as filtering array in-place.
+
+🧠 Problem 3: Max Consecutive Ones
+
+    Pattern: Sliding Window / Counting
+
+    Input: binary array
+
+    Output: longest streak of 1s
+
+    ✅ 2. Java Practice – In-place & Edge Cases
+
+Java Concept Focus: Arrays, Loops, Substring, System.arraycopy() (read, don't use yet), StringBuilder (next few days)
+
+Try to implement:
+
+    removeElement()
+
+    moveZeroes()
+
+    gcdOfStrings()
+    With:
+
+    Zero external libraries
+
+    Debug print statements
+
+    Manual dry runs
+
+✅ 3. Thinking Skill – Develop Pattern Matching
+
+Every time you solve a problem:
+
+    Ask yourself: "What’s the category of this?"
+
+    Maintain a DSA pattern map like:
+
+    Two Pointers → remove element, move zeroes, sorted duplicate remover
+        GCD String → math pattern + string logic
+        Sliding Window → max consecutive ones, max sum subarray
+
