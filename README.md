@@ -226,3 +226,7 @@ Window: [1,2,1] → only 2 types → return 3 ✅
 
 Input: [1,2,3,2,2]
 → [2,3,2,2] is longest with 2 types → return 4 ✅
+
+DAY 4: 5th Aug 2025
+1. Leetcode 2 questions per day
+2.
